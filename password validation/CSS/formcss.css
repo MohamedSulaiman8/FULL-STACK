@@ -1,0 +1,43 @@
+*{
+    margin: 10px;
+}
+.grid-container{
+    
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top:100px;
+    margin-left:100px;
+    margin-bottom: auto;
+    margin-right: 100px;
+    border: 1px solid rgb(131, 128, 128);
+    height: auto;
+    width: max-content;
+    border-radius: 5px;
+}
+.grid-item{
+    
+    width: auto;
+}
+#next{
+    float: right;
+}
+footer{
+    margin-left: 100px;
+}
+
+.right-section{
+    width: 400px;
+    padding: 0;
+}
+button{
+    background-color:skyblue;
+    color: black;
+    border-color: aliceblue;
+    border-radius: 10px;
+
+}
+footer span{
+    float: center;
+    margin-right: 100px;
+}
+
