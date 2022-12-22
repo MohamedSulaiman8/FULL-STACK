@@ -23,7 +23,7 @@ body{
     font-size: large;
 }
 header{
-    background-image: url("../IMAGES/download.jpg");
+    background-image: url("IMAGES/download.jpg");
     background-color: grey;
     background-blend-mode: multiply;
     position:sticky;
