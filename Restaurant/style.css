@@ -28,25 +28,24 @@ header{
     background-blend-mode: multiply;
     position:sticky;
     top: 0;
+   
 }
 header h1{
-    border-top: 5px solid beige;
+border-top: 5px solid beige;
     text-align: center;
     color: white;
     font-weight: bolder;
 }
 .slideshow-container{
     width: 400px;
-    margin-left: 38%;
+    /* margin: auto; */
     position: relative;
-    margin-top: 50px;
-    display: inline-block;
 }
 .slideshow-container img{
-    /* vertical-align: middle; */
+    vertical-align: middle;
 }
 .index{
-    top: 0px;
+    top: 50px;
     position: absolute;
     color: aliceblue;
 }
@@ -96,12 +95,11 @@ header h1{
     padding: 10px;
 }
 #restaurantpic{
-    margin-left: 14%;
-    width: 30%;
+    width: 100%;
     margin-top: 0;
 }
 .sub-1{
-    margin-left: 24%;
+    text-align: center;
 }
 #res-name{
     text-align: center;
@@ -112,8 +110,8 @@ header h1{
     margin-bottom: 20px;
 }
 .story{
-    float: right;
-    width: 25%;
+    padding: 10px;
+    width: 100%;
     margin-right: 20%;
     background-color: rgb(226, 91, 37);
     border-radius: 20px;
@@ -142,18 +140,13 @@ header h1{
     display: inline;
     margin-top: 0;
 }
-.first-content img{
-    display: inline;
-    margin-left: 30%;
-    
+.container-main{
+    display: flex;
 }
-.leftside{
-    width:30%;
-    display: inline-block;
-    margin-left: 20px;
-    background-color: rgb(59, 151, 16);
-    border-radius: 20px;
-    padding: 10px;
+.grid-items{
+    border: #504e4e;
+    padding: 20px; 
+    width: 100%;
 }
 footer{
     background-color: orange;
@@ -161,5 +154,10 @@ footer{
     display: flex;
 }
 .footer-element{
-    margin-left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.story-title{
+    text-align: center;
+    padding: 0;
 }

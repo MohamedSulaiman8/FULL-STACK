@@ -1,33 +1,33 @@
-*{
+.box input{
     margin: 10px;
 }
 .grid-container{
-    
     display: grid;
     grid-template-columns: auto auto;
-    margin-top:100px;
-    margin-left:100px;
+    margin-top:10px;
+    margin-left:auto;
     margin-bottom: auto;
-    margin-right: 100px;
+    margin-right: auto;
     border: 1px solid rgb(131, 128, 128);
     height: auto;
     width: max-content;
     border-radius: 5px;
+    padding: 10px;
 }
 .grid-item{
-    
+    padding: 25px;
     width: auto;
 }
 #next{
     float: right;
 }
-footer{
-    margin-left: 100px;
+.lang{
+    margin-left: 260px;
+    margin-right: ;
 }
-
 .right-section{
     width: 400px;
-    padding: 0;
+    margin-top: -100px;
 }
 button{
     background-color:skyblue;
@@ -36,9 +36,7 @@ button{
     border-radius: 10px;
 
 }
-footer span{
-    float: center;
-    margin-right: 100px;
-}
+
+
 
 
