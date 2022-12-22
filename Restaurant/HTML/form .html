@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+    <link rel="stylesheet" href="../CSS/formcss.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JAVASCRIPT/validation .js"></script>
+</head>
+<body onload="pageLoad()">
+    <header>
+        <nav>
+            <div class="nav-content">
+                <span><a class="nav-buttons" href="/Restaurant/HTML/restaurant.html">Home</a></span>
+                <span><button class="nav-buttons">Feedback</button></span>
+                <span><button class="nav-buttons">About</button></span>
+            </div>
+        </nav>
+        <h1 id="name">RESTAURANT</h1>
+    </header>
+    <section class="grid-container">
+        <img src="../images/google.jpg" alt="">
+        <br>
+        <section class="grid-item">
+            <form name="form1"  method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validate()">
+                <div id="heading">Create yout google account</div>
+                <input type="text" name="firstname" placeholder="First name">
+                <input type="text" name="lastname" placeholder="Last name">
+                <br>   
+                <input type="text" name="username" placeholder="Username">            
+                <div id="email">You can use letters,numbers & periods</div>
+                <input type="text" placeholder="phone number" name="num">
+                <br>            
+                <button>Use my current email address instead</button>
+                <br>
+                <input type="text" name="em" placeholder="reference email">   
+                <br>           
+                <input type="password" name="password" oninput="strengthValidate()"  id="text" placeholder="Password" onfocus="onFocuss()">
+                <input type="password" name="confirm" placeholder="Confirm" id="confirm" onfocus="onFocus()"> 
+                <p id="strength"></p>
+                <p id="strength-description"></p>        
+                <div>Use 6 or more characters with a mix of uppercase and lowercase letters & numbers</div>
+                <br>
+                <input type="checkbox" id="myCheck" >
+                <span>Show password</span>
+                <br>
+                <button id="signin">Sign in instead</button>
+                <input id="next" type="submit" value="next" onmouseover="mouseOver()" onmouseout="mouseOut()">
+            </form>
+        </section>
+        <section class="grid-item">
+            <img src="../images/account.svg" class="right-section">
+        </section>
+    </section>
+    <footer>
+        <form >
+            <label>Language</label>
+            <select>
+                <option value="English">English</option>
+                <option value="Tamil">Tamil</option>
+                <option value="Hindi">Hindi</option>
+            </select>
+        </form>
+    </footer>
+    <footer>
+        <p class="foter-element">&copy;ALL RIGHTS RESERVED 
+        </p>
+    </footer>
+    
+</body>
+</html>

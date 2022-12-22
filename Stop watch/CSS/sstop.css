@@ -1,0 +1,40 @@
+
+
+.container{
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+    width: 100%;
+}
+.watch{
+    padding: 20px;
+}
+.button{
+    margin-left: 20px;
+    font-size: 30px;
+}
+#start{
+    background-color: green;
+    color: aliceblue;
+    border: 1px solid black;
+}
+#stop{
+    background-color: red;
+    color: aliceblue;
+    border: 1px solid black;
+}
+#reset{
+    background-color: orange;
+    color: aliceblue;
+    border: 1px solid black;
+}
+.digits{
+    font-size: 30px;
+    padding: 20px;
+}
+.text{
+    font-size: 30px;
+    padding: 0;
+}
