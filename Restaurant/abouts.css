@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+}
+.container-items{
+    border: #504e4e;
+    padding: 20px; 
+    width: 100%;
+}
+.aboutstory{
+    width: 50%;
+    margin-left: 20%;
+    margin-top: 25px;
+}
+.aboutstory h2{
+    margin-bottom: 20px;
+}
+.main-cont{
+    background-color:orange ;
+    border-radius: 20px;
+    padding: 10px;
+}
