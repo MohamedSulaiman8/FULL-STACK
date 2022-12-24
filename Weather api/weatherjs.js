@@ -4,9 +4,6 @@ window.addEventListener('load',()=>{
     var cityName=document.querySelector(".city");
     var tempDegree=document.querySelector(".temp");
     var description=document.querySelector(".description");
-    errorCallback=()=>{
-        alert("Location permission is required to provide the weather details")
-    }
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition((position) =>{
             lat=position.coords.latitude;
@@ -25,6 +22,9 @@ window.addEventListener('load',()=>{
                     tempDegree.textContent=Math.round(temp-273);
                     description.textContent=desc;
                 })
-        },errorCallback)
+        })
+    }
+    else{
+        alert("Location permission is required to provide the weather details");
     }
 })
