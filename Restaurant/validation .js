@@ -57,7 +57,7 @@ function strengthValidate(){
     } 
 }
 
-//Events
+//DOM Events
 function mouseOver(){
     document.getElementById("next").style.backgroundColor="skyblue";
 
@@ -66,7 +66,7 @@ function mouseOut(){
     document.getElementById("next").style.backgroundColor="white";
 }
 function pageLoad(){
-    alert("ENTER THE CORRECT DETAILS");
+     alert("ENTER THE CORRECT DETAILS");
 }
 function onFocuss(){
     document.getElementById("text").style.backgroundColor="lightgreen";

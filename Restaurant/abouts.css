@@ -19,3 +19,17 @@
     border-radius: 20px;
     padding: 10px;
 }
+.container{
+    animation: main-in 1000ms ease-out; 
+}
+@keyframes main-in {
+    0%{
+        transform: translateY(+100%);
+        opacity: -5;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    
+}
