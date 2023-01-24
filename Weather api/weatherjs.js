@@ -27,7 +27,7 @@ function returnText(){
                 tempDegree.textContent=Math.round(temp-273);
                 description.textContent=desc;
                 humidityValue.textContent=humidity;
-                count.textContent=country+"/";
+                count.textContent=country+"/"
             })
     }
     
