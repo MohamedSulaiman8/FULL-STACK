@@ -1,0 +1,132 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    width: 700px;
+    height: 300px;
+    text-align:center;
+    margin-top: 43px;
+    background-color: rgb(87, 124, 180);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+.container h2,h1,span,p{
+    color: rgb(163, 226, 235);
+}
+.info p{
+    padding-bottom: 10px;
+}
+.temp,.humidity{
+    display: inline;
+}
+
+.heading{
+    margin-top: 0px;
+    border-radius: 10px;
+    background-color: rgb(20, 12, 12);
+    padding: 10px;
+}
+/* .temp,.temp-desc{
+    cursor: pointer;
+} */
+header{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background-color: rgb(52, 55, 103);
+    height: 80px;
+}
+header h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.city,.country{
+    display: inline-block;
+}
+.temp,.description{
+    font-size:x-large;
+}
+.temp-desc{
+    padding-top: 0%;
+    margin-top: 0%;
+    display: inline-block;
+    font-size: 35px;
+    margin-top: 0%;
+    margin-bottom:0%;
+}
+.humidity-desc{
+    padding-top: 0%;
+    margin-top: 0%;
+    display: inline-block;
+    font-size: 35px;
+    margin-top: 0%;
+    margin-bottom:0%;
+}
+.description{
+    margin-top: 0;
+}
+footer p{
+    display: inline-block;
+    margin-bottom: 0px;
+}
+footer{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background-color: rgb(52, 55, 103);
+    height: 70px;
+    margin-top: 94px;
+}
+.headings{
+    font-size: small;
+    padding-top: 0%;
+    margin-top: 0%;
+    display: inline-block;
+    font-size: 35px;
+    margin: 30px;
+    margin-top: 0%;
+    margin-bottom:0%;
+}
+.temperature,.humidity-sec{
+    display: inline-block;
+    margin-top: 0%;
+}
+.temperature{
+    margin-right: 100px;
+}
+.humidity-sec{
+    margin-left: 100px;
+}
+.input-box{
+    text-align: center;
+    margin-top: 50px;
+    height: 100%;
+    width: 100%;
+}
+input{
+    height: 70px;
+    width: 300px;
+    border-radius: 10px;
+    border: solid black 4px;
+    font-size: larger;
+    text-align: center;
+}
+input:placeholder-shown{
+    font-size: large;
+}
+button{
+    /* margin-left: 740px;*/
+    margin-top: 25px; 
+    /* margin-left: 48%;
+    margin-right: 50%; */
+    background-color: rgb(87, 124, 180);
+    margin-left: 750px;
+    cursor: pointer;
+    color: aliceblue;
+    border-radius: 5px;
+}
+
