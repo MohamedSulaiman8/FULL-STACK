@@ -138,13 +138,16 @@ button{
         width: 90%;
     }
     .input-box{
-       
+       text-align: center;
     }
     input{
         width: 40%;
     }
     footer{
         margin-top: 17%;
+    }
+    .headings{
+        font-size: larger;
     }
     
 }
