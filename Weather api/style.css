@@ -1,177 +1,47 @@
-body{
-    margin: 0px;
-    padding: 0px;
-}
-
-.container{
-    width: 70%;
-    height: 40%;
-    text-align:center;
-    margin-top: 43px;
-    background-color: rgb(87, 124, 180);
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-}
-.container h2,h1,span,p{
-    color: rgb(163, 226, 235);
-}
-.info p{
-    padding-bottom: 10px;
-}
-.temp,.humidity{
-    display: inline;
-}
-
-.heading{
-    margin-top: 0px;
-    border-radius: 10px;
-    background-color: rgb(20, 12, 12);
-    padding: 10px;
-}
-/* .temp,.temp-desc{
-    cursor: pointer;
-} */
-header{
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
-    background-color: rgb(52, 55, 103);
-    height: 100%;
-}
-header h1{
-    margin-top: 2%;
-    margin-bottom: 2%;
-    display: inline-block;
-}
-.city,.country{
-    display: inline-block;
-}
-.temp,.description{
-    font-size:x-large;
-}
-.temp-desc{
-    padding-top: 0%;
-    margin-top: 0%;
-    display: inline-block;
-    font-size: 35px;
-    margin-top: 0%;
-    margin-bottom:0%;
-}
-.humidity-desc{
-    padding-top: 0%;
-    margin-top: 0%;
-    display: inline-block;
-    font-size: 35px;
-    margin-top: 0%;
-    margin-bottom:0%;
-}
-.description{
-    margin-top: 0;
-}
-footer p{
-    display: inline-block;
-    margin-bottom: 0px;
-}
-footer{
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
-    background-color: rgb(52, 55, 103);
-    height: 70px;
-    margin-top: 94px;
-    width: 100%;
-}
-.headings{
-    font-size: small;
-    padding-top: 0%;
-    margin-top: 0%;
-    display: inline-block;
-    font-size: 35px;
-    margin: 30px;
-    margin-top: 0%;
-    margin-bottom:0%;
-}
-.temperature,.humidity-sec{
-    display: inline-block;
-    margin-top: 0%;
-}
-.temperature{
-    margin-right: 100px;
-}
-.humidity-sec{
-    margin-left: 100px;
-}
-.input-box{
-    /* text-align: center; */
-    margin-top: 50px;
-    height: 100%;
-    width: 100%;
-}
-input{
-    height: 70px;
-    width: 300px;
-    border-radius: 10px;
-    border: solid black 4px;
-    font-size: larger;
-    text-align: center;
-}
-input:placeholder-shown{
-    font-size: large;
-}
-button{
-    /* margin-left: 740px;*/
-    margin-top: 25px; 
-    /* margin-left: 48%;
-    margin-right: 50%; */
-    background-color: rgb(87, 124, 180);
-    margin-left: 750px;
-    cursor: pointer;
-    color: aliceblue;
-    border-radius: 5px;
-}
-@media screen and (max-width:600px) {
-    button{
-        margin-left: 46%;
-    }
-    .container{
-        width: 90%;
-    }
-    .input-box{
-       text-align: center;
-    }
-    input{
-        width: 50%;
-    }
-    footer{
-        margin-top: 17%;
-    }
-    .headings{
-        font-size: larger;
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="weatherjs.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Get latest weather information</h1>
+    </header>
+    <div class="input-box">
+        <input id="inputbox" type="search" placeholder="Enter the city name">
+    </div>
+    <button onclick="returnText()">Search</button>
     
-}
-@media screen and (min-width:601px) and (max-width:1600px) {
-    button{
-        text-align: center;
-    }
-    .container{
-        width: 500px;
-        text-align: center;
-        
-    }
-    .input-box{
-       text-align: center;
-    }
-    input{
-        /* margin-left: 2%; */
-    }
-    footer{
-        margin-top: 7.7%;
-    }
-
-
-    
-}
-
-
+    <div class="container">
+        <h1 class="heading">Current Weather</h1>
+        <div class="main-content">
+            <div class="location">
+                <h2 class="country">Country/</h2>
+                <h2 class="city">City</h2>
+            </div>
+            <div class="info">
+                <p class="headings">Temperature</p>
+                <p class="headings">Humidity</p>
+                <br>
+                <section class="temperature">
+                    <h2 class="temp"></h2>
+                    <p class="temp temp-desc">C</p>
+                </section>
+                <section class="humidity-sec">
+                    <h2 class="humidity"></h2>
+                    <p class="humidity humidity-desc">%</p>
+                </section>
+                <p class="description"></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy;All rights reserved</p>
+    </footer>
+</body>
+</html>
