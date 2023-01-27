@@ -142,7 +142,7 @@ button{
 }
 @media screen and (max-width:600px) {
     button{
-        margin-left: 46%;
+        margin-left: 45%;
     }
     .container{
         width: 90%;
