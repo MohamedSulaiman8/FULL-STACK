@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.app{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 1024px;
+}
+
+/* LOGIN */
+
+.auth{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(240, 183, 76);
+}
+.auth h1{
+    color: rgb(121, 81, 7);
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.auth form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 50px;
+    width: 200px;
+    gap: 20px;
+
+}
+.auth form input{
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid ;
+}
+.auth form button{
+    background-color: rgb(240, 183, 76);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+}
+.auth form span{
+    text-align: center;
+}
+.auth form p{
+    text-align: center;
+    color: red;
+}
+
+/* HOME */
+
+.nav-container{
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   background-color: black;
+   border-radius: 5px;
+
+}
+.logo img{
+    width:100px;
+}
+.logo{
+    margin-left: 5%;
+}
+.logo #brand{
+    display: block;
+    text-align: center;
+    font-family: Impact;
+    color: white;
+}
+.h-links{
+    margin-right: 5%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    display: flex;
+    gap: 20px;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+}
+.h-links span{
+    color: white;
+    cursor: pointer;
+}
+.h-links h6{
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+}
+.h-link{
+    text-decoration: none;
+}
+.write-link{
+    background-color: rgb(240, 183, 76);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+.write-link:hover{
+    background-color:white;
+    color: black;
+}
+
+/* Footer */
+.footer{
+    margin-top: 25px;
+    background-color:  black;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+#foot{
+    font-family: Impact;
+    margin-left: 10%;
+    color: white;
+}
+#tagline{
+    margin-right: 10%;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* Home */
+.home{
+    border-radius: 20px;
+    padding: 20px;
+}
+.home img{
+    width: 100%;
+   height: m;
+}
+.posts{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.post{
+    display: flex;
+    gap: 90px;
+}
+.post:nth-child(2n+1){
+    flex-direction: row-reverse;
+}
+.img{
+    flex: 2;
+    position: relative;
+}
+.img img{
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+.content{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.img::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color:rgb(240, 183, 76) ;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    z-index: -1;
+}
+
+.link h1{
+font-size: 48px;
+}
+.link{
+    color: black;
+    text-decoration: none;
+}
+.content p{
+    font-size: 18px;
+}
+.content button{
+    background-color: white;
+    border: none;
+    color:  rgb(240, 183, 76) ;
+    width: max-content;
+    padding: 10px 20px;
+    /* border-radius: 8px; */
+    cursor: pointer;
+    border: 2px solid rgb(240, 183, 76)  ;
+}
+.content button:hover{
+    background-color:rgb(240, 183, 76) ;
+    color: white;
+}
+/* Single */
+.single{
+    display: flex;
+    gap: 50px;
+}
+.cont img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.cont{
+    flex: 5;
+}
+.menu{
+    flex: 2;
+}
+.user{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size:14px ;
+}
+.user span{
+    font-size: 30px;
+    font-family: Impact;
+}
+.user img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+.edit{
+    display: flex;
+    gap: 5px;
+}
+.edit img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.cont h1{
+    font-size: 40px;
+}
+.cont p{
+    text-align: justify;
+    line-height: 3.5;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.single{
+    margin-top: 25px;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.menu h1{
+    font-size: 20px;
+}
+.post-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.post-menu img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.menu button{
+    background-color: white;
+    border: none;
+    color:  rgb(240, 183, 76) ;
+    width: max-content;
+    padding: 10px 20px;
+    /* border-radius: 8px; */
+    cursor: pointer;
+    border: 2px solid rgb(240, 183, 76)  ;
+}
+.menu button:hover{
+    background-color:rgb(240, 183, 76) ;
+    color: white;
+}
+/* Write */
+.add{
+    margin-top: 25px;
+    display: flex;
+    gap: 20px;
+}
+.content-write{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.menu-write{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.item{ 
+    border: 1px solid lightgrey;
+    padding: 10px;
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+
+}
+.item h1{
+    font-size: 20px;
+} 
+.file{
+    text-decoration: underline;
+    color: purple;
+}
+#file{
+    display: none;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+#b1{
+    cursor: pointer;
+    color: rgb(240, 183, 76);
+    border: 1px solid rgb(240, 183, 76);
+    background-color: white;
+    padding: 3px 5px;
+}
+#b2{
+    cursor: pointer;
+    color: white;
+    border: 1px solid rgb(240, 183, 76);
+    background-color: rgb(240, 183, 76);
+    padding: 3px 5px;
+}
+
+.content-write input{
+    padding: 10px;
+    border: 1px solid lightgrey;
+}
+.editorcontainer{
+    height: 420px;
+    overflow: scroll;
+    border: 1px solid lightgrey;
+}
+.editor{
+    height: 100%;
+    border: none;
+}
+.cat{
+    display: flex;
+    align-items: center;
+    color:  rgb(240, 183, 76);
+}
+
