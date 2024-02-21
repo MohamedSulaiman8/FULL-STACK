@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Book Store</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Book Store</h1>
+    </nav>
+    <div class="container">
+        <div class="book">
+            <h1 class="bookName">Roots</h1>
+            <h3 class="author">Alex</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam eaque ea autem quos excepturi ullam quae qui sed explicabo vero, quisquam possimus pariatur esse doloribus iusto eius fuga. Nostrum earum quas nesciunt ratione reprehenderit, adipisci porro architecto sint veniam temporibus. Ducimus sequi quibusdam magni vero quis quaerat harum quas, consequatur porro dolores. Deleniti fuga rem repellat ducimus ullam, iste eum. Labore soluta quae velit. Consequatur maiores quae esse obcaecati repudiandae, ex praesentium, laboriosam hic sapiente sit perspiciatis, deleniti laborum vel quasi recusandae quo labore consectetur. Reiciendis laborum doloremque eveniet vitae, voluptatibus molestiae. Sint ratione, quibusdam a facere pariatur similique nihil.</p>
+            <button class="deleteButton" onclick="handleDelete(event)">Delete</button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form action="">
+            <input type="text" placeholder="Book Title" id="bname">
+            <input type="text" placeholder="Author Name" id="aname">
+            <textarea placeholder="Short Description" id="description"></textarea>
+            <button id="addbook">ADD</button>
+            <button id="cancelbook">CANCEL</button>
+        </form>
+    </div>
+    <button class="add" onclick="show()">+</button>
+    <script src="./script.js"></script>
+</body>
+</html>
