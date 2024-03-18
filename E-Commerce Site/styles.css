@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium';
+}
+.service-container-2 p,.news p,.footer p{
+    font-family:'Franklin Gothic small';
+}
+/* navbar */
+.navbar{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.navbar-links{
+    display: flex;
+    gap: 10px;
+}
+.navbar-links a{
+    text-decoration: none;
+    color:  #1d232c;
+    font-size: large;
+}
+.navbar-links a:hover{
+    text-decoration: underline;
+}
+.navbar-menu-toggle{
+    display: none;
+}
+
+
+/* sidebar */
+
+.side-navbar{
+    background-color: #1d232c;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color: white;
+    transition: 0.5s;
+}
+.side-navbar-link{
+    margin-bottom: 30px;
+}
+.side-navbar-links a{
+    text-decoration: none;
+    color: white;
+}
+.side-navbar-links a:hover{
+    text-decoration: underline;
+}
+
+
+/* header */
+.header{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 50px;
+}
+.header-button{
+     padding-left: 20px;
+     padding-right: 20px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     background-color: black;
+     color: white;
+     margin-top: 10px;
+     cursor: pointer;
+}
+
+
+/* service */
+.service{
+    padding: 15px;
+}
+.service-container-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service-container-2{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.service-container-2 div{
+    background-color: #F2F4F7;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* arrival */
+
+.arrival{
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}  
+.arrival-container{
+    position: relative;
+    flex-basis: 20%;
+}
+.arrival-button{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* newsletter */
+
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    margin-top: 20px;
+}
+.news input{
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: solid black 3px;
+}
+.news button{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+}
+
+/* products */
+
+.product-search{
+    width: 80%;
+    border: solid black 3px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px
+}
+.product-search input{
+    background: transparent;
+    border: none;
+    width: 100%;
+}
+.product-search input:focus{
+    outline: none;
+}
+.products{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product img{
+    border-radius: 10px;
+}
+.product{
+    text-align: center;
+    flex-basis: 20%;
+}
+
+/* contact */
+
+.contact-container{
+    background-color: #1d232c;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 75px;
+}
+
+label,.contact-container h2{
+    color: white;
+    margin-bottom: 30px;
+}
+
+.input-box{
+    margin-bottom: 10px;
+}
+.input-box div{
+    width:100%;
+    background-color: white;
+    border: solid black 3px;
+    border-radius: 5px;
+    /* padding: 10px; */
+    min-height: 70px;
+    margin-top: 30px;
+}
+.input-box label{
+    font-size: 20px;
+    font-weight: 100;
+}
+.input-box input{
+    background: transparent;
+    border: none;
+    width: 100%;
+}
+.input-box textarea:focus,.input-box input{
+    outline: none;
+}
+.input-box textarea{
+    border: none;
+    width: 100%;
+}
+.contact-container button{
+    background-color: rgb(80, 80, 236);
+    color: white;
+    border: none;
+    padding: 20px;
+    font-size: medium;
+    border-radius: 2px;
+    margin-top: 20px;
+}
+
+/* footer */
+
+.footer{
+    margin-top: 20px;
+    background-color: #1d232c;
+    color: white;
+    padding: 40px;
+}
+
+@media screen and (max-width:700px){
+    .navbar-menu-toggle{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .header-image{
+        display: none;
+    }
+    .service-container-1{
+        display: none;
+    }
+    .service-container-2{
+        flex-direction: column;
+    }
+}
